@@ -30,15 +30,3 @@ function classNames(...args) {
 
   return classes.join(' ')
 }
-
-/**
- * 
- * Again, the "borrowed" method via .call ignores the object's own property named hasOwnProperty and uses the real one from the prototype, keeping your code from crashing.
-
-Why .call?
-The .call() method allows you to execute a function while setting the this context to whatever you want.
-
-Object.prototype.hasOwnProperty is the function.
-
-.call(arg, key) tells that function: "Run yourself, but use arg as this and look for key."
- */
